@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Media Center</title>
+    <style>
+
+        .containen{
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+        }
+        .box{
+            width: 200px;
+            height: 200px;
+            background: aqua;
+            margin: 5px;
+            border: 2px solid red;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-size: 85px;
+        }
+        @media screen and (max-width: 500px) {
+            .containen{
+              grid-template-columns: repeat(1, 1fr);
+            }
+        }
+    </style>
+</head>
+<body>
+    <h2>Responsive</h2>
+
+    <div class="containen">
+        <div class="box">1</div>
+        <div class="box">2</div>
+        <div class="box">3</div>
+        <div class="box">4</div>
+        <div class="box">5</div>
+        <div class="box">6</div>
+        <div class="box">7</div>
+        <div class="box">8</div>
+        <div class="box">9</div>
+    </div>
+
+</body>
+</html>
